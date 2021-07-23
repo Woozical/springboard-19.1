@@ -13,6 +13,7 @@ op = {
 }
 
 @app.route('/<operation>')
+@app.route('/math/<operation>')
 def do_math(operation):
     a = int(request.args["a"])
     b = int(request.args["b"])
